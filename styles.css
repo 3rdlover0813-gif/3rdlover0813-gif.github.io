@@ -279,3 +279,10 @@ blockquote cite {
 
 /* numbered footnote markers ([1] style) requested by instructor */
 sup.fn { font-family: var(--font-mono); font-size: 0.62em; color: var(--amber); margin-left: 1px; font-weight: 500; vertical-align: super; }
+
+/* footnote backlink arrow */
+.fn-back { color: var(--amber); text-decoration: none; margin-left: 4px; font-size: 0.9em; }
+.fn-back:hover { color: var(--paper); }
+sup.fn a { color: var(--amber); text-decoration: none; }
+sup.fn a:hover { text-decoration: underline; }
+.refs li:target { background: rgba(216,166,87,0.08); }
