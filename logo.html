@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maison JB — Juhyun Bae's personal logo for EST 240 Module 8, in three sizes with downloads and the AI process used to build it.">
   <title>Logo — Maison JB</title>
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -17,9 +18,20 @@
     .gold-div { display:flex; align-items:center; justify-content:center; gap:9px; margin-top:12px; }
     .gold-div .l { height:1px; width:42px; background:#c99a3a; }
     .maison-loc { font-family: var(--font-display); font-size:9px; letter-spacing:5px; color:#8a6f3a; margin-top:11px; text-indent:5px; }
+
     .scale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); margin:30px 0; }
-    .scale-cell { background:#080906; padding:34px 16px; text-align:center; }
-    .scale-cell .lab { font-family:var(--font-mono); font-size:10px; letter-spacing:1px; color:var(--muted); margin-top:16px; }
+    .scale-cell { background:#080906; padding:30px 16px 24px; text-align:center; display:flex; flex-direction:column; align-items:center; }
+    .scale-art { height:120px; display:flex; align-items:center; justify-content:center; width:100%; }
+    .scale-cell .lab { font-family:var(--font-mono); font-size:10px; letter-spacing:1px; color:var(--muted); margin-top:14px; }
+    .scale-cell .sub { font-family:var(--font-body); font-size:13px; color:var(--muted); margin-top:4px; line-height:1.4; }
+    .dl-row { display:flex; gap:8px; justify-content:center; margin-top:14px; }
+    .dl-btn { font-family:var(--font-mono); font-size:11px; letter-spacing:1px; color:#edd07a; background:transparent; border:1px solid #6e5524; padding:6px 12px; border-radius:4px; cursor:pointer; transition:border-color .2s, background .2s; text-decoration:none; }
+    .dl-btn:hover { border-color:#c99a3a; background:#1c1709; }
+
+    .prompt { border:1px solid var(--line); background:var(--ink-2); padding:18px 22px; margin:16px 0; }
+    .prompt .pnum { font-family:var(--font-mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--amber); }
+    .prompt .pbody { font-size:16px; line-height:1.6; color:var(--paper); margin-top:8px; }
+    .tool-tag { display:inline-block; font-family:var(--font-mono); font-size:12px; letter-spacing:1px; color:#edd07a; border:1px solid #6e5524; padding:4px 12px; border-radius:4px; margin-top:6px; }
     @media (max-width:620px){ .scale-grid{ grid-template-columns:1fr; } }
   </style>
 </head>
@@ -52,10 +64,11 @@
 
   <div class="wrap">
     <header class="hero">
-      <div class="eyebrow">02 / Personal Logo</div>
+      <div class="eyebrow">02 / Module 8 · Visual Identity</div>
       <h1>A crest that is<br>also a <em>system</em>.</h1>
-      <p class="lede">Maison JB &mdash; a personal mark built from straight lines and angles, wearing the
-      language of a baroque house while hiding a network of nodes inside the crown and the shield.</p>
+      <p class="lede">Maison JB &mdash; a mark of straight lines and angles. Read denotatively it is a baroque
+      crest; read connotatively, the gems and monogram points form a network. Ornament on the outside,
+      system within.</p>
     </header>
 
     <div class="crest-frame-outer">
@@ -64,10 +77,8 @@
           <div class="mono-bg"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#ma)"/></svg></div>
           <div class="crest-content">
             <div class="crest-kicker">&#9670;&nbsp;&nbsp;SYSTEMS &middot; STRUCTURE &middot; DESIGN&nbsp;&nbsp;&#9670;</div>
-            <svg viewBox="0 0 340 360" style="width:100%; max-width:280px; margin-top:8px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Angular Maison JB crest with laurel, crown and shield">
-              <g fill="none" stroke="url(#ga)" stroke-width="2.4" stroke-linejoin="miter">
-                <path d="M120,58 L120,34 L140,48 L150,20 L170,44 L190,20 L200,48 L220,34 L220,58 Z"/>
-              </g>
+            <svg viewBox="0 0 340 360" style="width:100%; max-width:280px; margin-top:8px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maison JB crest">
+              <g fill="none" stroke="url(#ga)" stroke-width="2.4" stroke-linejoin="miter"><path d="M120,58 L120,34 L140,48 L150,20 L170,44 L190,20 L200,48 L220,34 L220,58 Z"/></g>
               <rect x="150" y="28" width="9" height="9" transform="rotate(45 154 32)" fill="#fdf3c4"/>
               <rect x="186" y="28" width="9" height="9" transform="rotate(45 190 32)" fill="#fdf3c4"/>
               <rect x="166" y="14" width="10" height="10" transform="rotate(45 171 19)" fill="#fdf3c4"/>
@@ -91,100 +102,78 @@
             </svg>
             <div class="maison-label">HOUSE OF</div>
             <div class="maison-name">JUHYUN BAE</div>
-            <div class="gold-div">
-              <span style="color:#c99a3a; font-size:8px;">&#9670;</span>
-              <div class="l"></div>
-              <span style="color:#edd07a; font-size:9px;">&#9632;</span>
-              <div class="l"></div>
-              <span style="color:#c99a3a; font-size:8px;">&#9670;</span>
-            </div>
+            <div class="gold-div"><span style="color:#c99a3a; font-size:8px;">&#9670;</span><div class="l"></div><span style="color:#edd07a; font-size:9px;">&#9632;</span><div class="l"></div><span style="color:#c99a3a; font-size:8px;">&#9670;</span></div>
             <div class="maison-loc">TECHNOLOGICAL SYSTEMS &middot; SUNY KOREA</div>
           </div>
         </div>
       </div>
     </div>
 
-    <h3>Three scales</h3>
+    <h2>Three sizes</h2>
+    <p>Per the Module 8 brief: three sizes, with the middle size in black &amp; white. All three are vector
+    SVGs, so they stay crisp at any scale. Download each as SVG or PNG below.</p>
+
     <div class="scale-grid">
       <div class="scale-cell">
-        <svg viewBox="0 0 140 150" style="width:100%; max-width:104px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Large crown and monogram, gold">
-          <g fill="none" stroke="url(#ga)" stroke-width="2.6" stroke-linejoin="miter">
-            <path d="M34,52 L34,30 L52,42 L60,18 L78,40 L96,18 L104,42 L122,30 L122,52 Z" transform="scale(0.62) translate(20,8)"/>
-          </g>
-          <rect x="42" y="26" width="7" height="7" transform="rotate(45 45 30)" fill="#fdf3c4"/>
-          <rect x="65" y="14" width="8" height="8" transform="rotate(45 69 18)" fill="#fdf3c4"/>
-          <rect x="90" y="26" width="7" height="7" transform="rotate(45 93 30)" fill="#fdf3c4"/>
-          <text x="44" y="130" font-family="Georgia,serif" font-size="80" font-weight="500" fill="url(#ga)" text-anchor="middle" style="letter-spacing:-4px;">J</text>
-          <text x="92" y="130" font-family="Georgia,serif" font-size="80" font-weight="500" fill="url(#ga)" text-anchor="middle">B</text>
-        </svg>
-        <div class="lab">LARGE &middot; CROWNED MONOGRAM</div>
+        <div class="scale-art" id="art-large"></div>
+        <div class="lab">LARGE &middot; COLOR</div>
+        <div class="sub">Crown &amp; monogram, gold</div>
+        <div class="dl-row"><button class="dl-btn" onclick="dl('large','svg')">SVG</button><button class="dl-btn" onclick="dl('large','png')">PNG</button></div>
       </div>
       <div class="scale-cell">
-        <svg viewBox="0 0 140 150" style="width:100%; max-width:96px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Medium monogram, monochrome">
-          <text x="44" y="118" font-family="Georgia,serif" font-size="92" font-weight="500" fill="#ece7df" text-anchor="middle" style="letter-spacing:-4px;">J</text>
-          <text x="92" y="118" font-family="Georgia,serif" font-size="92" font-weight="500" fill="none" stroke="#ece7df" stroke-width="2" text-anchor="middle">B</text>
-        </svg>
-        <div class="lab">MEDIUM &middot; B/W MONOGRAM</div>
+        <div class="scale-art" id="art-medium"></div>
+        <div class="lab">MEDIUM &middot; B/W</div>
+        <div class="sub">Print &amp; monochrome</div>
+        <div class="dl-row"><button class="dl-btn" onclick="dl('medium','svg')">SVG</button><button class="dl-btn" onclick="dl('medium','png')">PNG</button></div>
       </div>
       <div class="scale-cell">
-        <div style="display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px; background:#14110a; border:1px solid #6e5524;">
-          <svg viewBox="0 0 120 110" style="width:32px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Small JB icon, solid gold">
-            <text x="34" y="92" font-family="Georgia,serif" font-size="92" font-weight="600" fill="#edd07a" text-anchor="middle" style="letter-spacing:-6px;">JB</text>
-          </svg>
-        </div>
-        <div class="lab">SMALL &middot; ICON / FAVICON</div>
+        <div class="scale-art" id="art-small"></div>
+        <div class="lab">SMALL &middot; ICON</div>
+        <div class="sub">Favicon &amp; avatar</div>
+        <div class="dl-row"><button class="dl-btn" onclick="dl('small','svg')">SVG</button><button class="dl-btn" onclick="dl('small','png')">PNG</button></div>
       </div>
     </div>
 
     <h2>Concept</h2>
-    <p>The mark is built as a deliberate paradox, and it is built entirely from straight lines and angles.
-    On the surface it borrows the visual grammar of a baroque luxury <em>maison</em> &mdash; a crown, a laurel
-    wreath, a shield, a metallic gold finish, a repeating monogram canvas, a motto, and a founding year set in
-    Roman numerals. Underneath that surface it carries a second, quieter system: the crown's gems and the points of
-    the monogram are <strong>nodes</strong>, joined by thin connecting lines into a small network. The angular
-    geometry is the bridge between the two readings, because the same hard edges that make the crest look
-    carved and authoritative also make it look like a system diagram, which mirrors my own field,
-    Technological Systems Management.</p>
+    <p>The mark is a deliberate paradox built entirely from straight lines and angles. On the surface it
+    borrows the grammar of a baroque luxury house &mdash; a crown, a laurel wreath, a shield, a metallic gold
+    finish, a repeating monogram canvas, and a founding year in Roman numerals. Underneath, the crown's gems
+    and the monogram's points are <strong>nodes</strong> joined by thin lines into a small network. The
+    angular geometry is the bridge: the same hard edges that look carved and authoritative also read as a
+    system diagram, mirroring my field, Technological Systems Management.</p>
 
     <div class="dc">
       <div class="dc-label">Denotation</div>
-      <p>A gold heraldic crest: a zig-zag crown set with diamond gems, a laurel wreath drawn as straight
-      angled leaves, a six-sided shield, and the overlapping initials J and B inside it. Diamond nodes sit on
-      the crown and at three points of the monogram, linked by faint lines. A ribbon reads "EST&middot;MMXXVI,"
-      and a pale JB pattern repeats across the background.</p>
+      <p>A gold heraldic crest: a zig-zag crown set with diamond gems, a laurel wreath of straight angled
+      leaves, a six-sided shield, and the overlapping initials J and B. Diamond nodes sit on the crown and at
+      three points of the monogram, linked by faint lines. A ribbon reads "EST&middot;MMXXVI."</p>
       <div class="dc-label">Connotation</div>
-      <p>The crown signals authority and plays on my nickname ("prince"); the laurel signals victory and honor;
-      the shield and the wordmark "House of Juhyun Bae" signal heritage and a curated identity. The gold
-      signals premium craft. But the deliberate <em>excess</em> is itself the argument: where minimalism claims
-      that power is restraint, this mark insists on the opposite. And the angular nodes quietly reframe all of
-      it as a <em>system</em> &mdash; ornament on the outside, structure within.</p>
+      <p>The crown signals authority and plays on my nickname ("prince"); the laurel signals honor; the
+      shield and motto signal a curated house; the gold signals craft. But the deliberate <em>excess</em> is
+      itself the argument &mdash; where minimalism claims power is restraint, this mark insists on the opposite,
+      while the angular nodes quietly reframe it all as a system.</p>
     </div>
 
-    <blockquote>
-      An anchor does not float free of meaning; the design fixes it.
-      <cite>&mdash; after Stuart Hall, on anchorage</cite>
-    </blockquote>
+    <h2>The AI prompts</h2>
+    <p>Per the Module 8 requirement to show the prompts and the AI used. The mark on this page was written
+    directly as <strong>SVG code</strong> with Anthropic Claude (Opus 4.7). As a design exercise, the prompts
+    below show how the very same crest could instead be produced with an <em>image generator</em> &mdash; the
+    brief that would describe this exact mark.</p>
+    <div class="tool-tag">TOOL · Anthropic Claude (SVG) &nbsp;|&nbsp; image-generation prompt set (what-if)</div>
 
-    <h2>How it was built</h2>
-    <h3>Construction logic</h3>
-    <p>The crest was drawn as vector geometry rather than generated as an image, so every element is deliberate.
-    Every curve was removed on purpose: the crown is a single zig-zag path, the laurel is built from straight
-    angled strokes, and the frame is a hard six-sided shield instead of an oval. The crown's diamond gems share
-    the same shape and size as the three monogram nodes, which is what lets the eye connect them into one
-    network. The initials use a high-contrast serif so the gold gradient catches a metallic sheen from light to
-    dark.</p>
+    <div class="prompt"><div class="pnum">Prompt 1 · Full crest</div><div class="pbody">A luxury heraldic crest emblem, strictly geometric and angular with no curves, gold metallic gradient on deep black background. A zigzag five-point crown set with diamond gems, flanked by two symmetrical laurel wreaths of straight angular leaves, surrounding a hexagonal shield. Inside, an elegant high-contrast serif monogram of "J" and "B" overlapping, with small diamond nodes connected by thin lines. A banner ribbon below reads "EST·MMXXVI". Faint repeating JB monogram pattern in the background. Symmetrical, vector logo style, flat, baroque maximalism, gold foil on black, 2px clean strokes.</div></div>
+    <div class="prompt"><div class="pnum">Prompt 2 · Crown silhouette</div><div class="pbody">Build the crown as five rising points on a flat band, drawn only with straight lines and miter joins — no curves — so the silhouette also reads as a system diagram. Strictly symmetrical, with diamond-shaped gems on the points.</div></div>
+    <div class="prompt"><div class="pnum">Prompt 3 · Laurel &amp; shield</div><div class="pbody">Frame the monogram with a six-sided hexagonal shield and two symmetrical laurel wreaths whose leaves are sharp angular strokes rather than soft curves. Gold gradient, thin even line weight throughout.</div></div>
+    <div class="prompt"><div class="pnum">Prompt 4 · Large / color variant</div><div class="pbody">Full-color version: gold metallic crown and serif "JB" monogram on a deep black background, with the wordmark "HOUSE OF JUHYUN BAE" beneath in spaced serif capitals.</div></div>
+    <div class="prompt"><div class="pnum">Prompt 5 · Mono &amp; icon variants</div><div class="pbody">Two reductions: (a) a black-and-white print version, serif "JB" with the J solid and the B as an outline on white; (b) a small icon, gold serif "JB" centered on a dark rounded-square badge, favicon style.</div></div>
 
-    <h3>Scaling strategy</h3>
-    <p>Baroque detail does not survive shrinking, so the mark steps down deliberately. The full crest is used
-    large; a crowned monogram is used at medium size; and a solid two-letter icon is used for the favicon, where
-    gradients and thin lines would otherwise turn to mud.</p>
-
-    <h2>Why it works</h2>
-    <p>The mark satisfies the core logo criteria. It is <strong>clear at scale</strong> because it reduces to a
-    clean JB icon. It <strong>works in color and in black and white</strong>, since the monochrome monogram keeps
-    the J solid and the B outlined for contrast. And it carries a genuine
-    <strong>denotation&ndash;connotation relationship</strong>: the same angular shapes can be read as a baroque
-    crest or as a system diagram, which is exactly the kind of layered, intentional meaning visual rhetoric asks for.</p>
+    <h2>Why this passes Module 8</h2>
+    <p><strong>Clarity at scale.</strong> The mark reduces to a clean JB icon whose straight strokes survive
+    downscaling to a 16-pixel favicon. <strong>Color and B&amp;W both work,</strong> because the composition
+    relies on shape, not on the gold; strip the color and a legible monogram remains.
+    <strong>Denotation and connotation</strong> both hold: the same angular shapes can be read as a baroque
+    crest or as a system diagram, with a motto and ribbon that fix the meaning the way Stuart Hall describes
+    an anchor fixing the meaning of an image.</p>
   </div>
 
   <footer class="foot">
@@ -193,6 +182,62 @@
       <span>SUNY Korea &middot; Prof. Pennings</span>
     </div>
   </footer>
+
+  <script>
+    var GOLD = '<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdf3c4"/><stop offset="30%" stop-color="#edd07a"/><stop offset="60%" stop-color="#c99a3a"/><stop offset="100%" stop-color="#6e5524"/></linearGradient></defs>';
+
+    var LOGOS = {
+      large: '<svg xmlns="http://www.w3.org/2000/svg" width="320" height="260" viewBox="0 0 320 260">' + GOLD +
+        '<rect width="320" height="260" fill="#0a0b0f"/>' +
+        '<g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="miter"><path d="M110,96 L110,64 L138,84 L160,48 L182,84 L210,64 L210,96 Z"/></g>' +
+        '<rect x="150" y="58" width="11" height="11" transform="rotate(45 155 63)" fill="#fdf3c4"/>' +
+        '<rect x="153" y="40" width="13" height="13" transform="rotate(45 159 46)" fill="#fdf3c4"/>' +
+        '<rect x="115" y="58" width="11" height="11" transform="rotate(45 120 63)" fill="#fdf3c4"/>' +
+        '<rect x="194" y="58" width="11" height="11" transform="rotate(45 199 63)" fill="#fdf3c4"/>' +
+        '<text x="118" y="208" font-family="Georgia,serif" font-size="120" font-weight="500" fill="url(#g)" text-anchor="middle" letter-spacing="-6">J</text>' +
+        '<text x="200" y="208" font-family="Georgia,serif" font-size="120" font-weight="500" fill="url(#g)" text-anchor="middle">B</text>' +
+        '<text x="160" y="240" font-family="Georgia,serif" font-size="13" letter-spacing="6" fill="#edd07a" text-anchor="middle">HOUSE OF JUHYUN BAE</text>' +
+        '</svg>',
+      medium: '<svg xmlns="http://www.w3.org/2000/svg" width="220" height="200" viewBox="0 0 220 200">' +
+        '<rect width="220" height="200" fill="#ffffff"/>' +
+        '<text x="78" y="150" font-family="Georgia,serif" font-size="120" font-weight="500" fill="#111111" text-anchor="middle" letter-spacing="-6">J</text>' +
+        '<text x="150" y="150" font-family="Georgia,serif" font-size="120" font-weight="500" fill="none" stroke="#111111" stroke-width="2.5" text-anchor="middle">B</text>' +
+        '</svg>',
+      small: '<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">' +
+        '<rect width="120" height="120" rx="14" fill="#14110a" stroke="#6e5524" stroke-width="2"/>' +
+        '<text x="60" y="88" font-family="Georgia,serif" font-size="86" font-weight="600" fill="#edd07a" text-anchor="middle" letter-spacing="-4">JB</text>' +
+        '</svg>'
+    };
+
+    function inject(id, svg){ var el=document.getElementById(id); if(el){ el.innerHTML = svg.replace('width="320" height="260"','style="max-height:120px;width:auto"').replace('width="220" height="200"','style="max-height:108px;width:auto"').replace('width="120" height="120"','style="max-height:96px;width:auto"'); } }
+    inject('art-large', LOGOS.large);
+    inject('art-medium', LOGOS.medium);
+    inject('art-small', LOGOS.small);
+
+    function dl(name, type){
+      var svg = LOGOS[name];
+      var fname = 'maison-jb-' + name;
+      if(type === 'svg'){
+        var blob = new Blob([svg], {type:'image/svg+xml'});
+        triggerDownload(URL.createObjectURL(blob), fname + '.svg');
+      } else {
+        var m = svg.match(/viewBox="0 0 (\d+) (\d+)"/);
+        var w = m ? +m[1] : 320, h = m ? +m[2] : 260, scale = 3;
+        var img = new Image();
+        var url = URL.createObjectURL(new Blob([svg], {type:'image/svg+xml'}));
+        img.onload = function(){
+          var c = document.createElement('canvas'); c.width = w*scale; c.height = h*scale;
+          var ctx = c.getContext('2d'); ctx.drawImage(img,0,0,c.width,c.height);
+          c.toBlob(function(b){ triggerDownload(URL.createObjectURL(b), fname + '.png'); URL.revokeObjectURL(url); });
+        };
+        img.src = url;
+      }
+    }
+    function triggerDownload(href, filename){
+      var a = document.createElement('a'); a.href = href; a.download = filename;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    }
+  </script>
 
 </body>
 </html>
