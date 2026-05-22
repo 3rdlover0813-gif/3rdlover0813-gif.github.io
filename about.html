@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About this site: Juhyun Bae's EST 240 Visual Rhetoric individual website at SUNY Korea.">
   <title>About — Juhyun Bae</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .artifact-list { counter-reset: art; list-style: none; margin: 8px 0 0; padding: 0; }
+    .artifact-list li { counter-increment: art; position: relative; padding: 14px 0 14px 44px; border-bottom: 1px solid var(--line); }
+    .artifact-list li::before { content: counter(art,decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: var(--font-mono); font-size: 12px; color: var(--amber); letter-spacing: 1px; }
+    .rubric-row { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .rubric-row .k { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--amber); }
+    .rubric-row .v { color: var(--paper); font-size: 17px; line-height: 1.6; }
+    @media (max-width:620px){ .rubric-row{ grid-template-columns:1fr; gap:4px; } .artifact-list li{ padding-left:36px; } }
+  </style>
 </head>
 <body>
 
@@ -23,40 +33,97 @@
   <div class="wrap">
     <header class="hero">
       <div class="eyebrow">03 / About</div>
-      <h1>Juhyun Bae</h1>
-      <p class="lede">Technological Systems Management student at SUNY Korea —
-      interested in how systems, math, and design fit together.</p>
+      <h1>The maker<br>and the <em>method</em>.</h1>
+      <p class="lede">This page documents who built the site, what it contains, and how each
+      decision was made against the course rubric &mdash; the design read as a system, not an accident.</p>
     </header>
 
-    <p>I'm a freshman in <strong>Technological Systems Management (TSM)</strong> at SUNY Korea,
-    Stony Brook University's Korea campus. I'm drawn to the places where engineering, mathematics,
-    and human systems overlap — which is also why a visual-rhetoric course feels relevant: interfaces
-    and images are systems that persuade.</p>
-
-    <p>I'm especially interested in a <strong>mathematics specialization</strong> and the idea of
-    building tools that make complex systems easier to read. An earlier project of mine looked at
-    <strong>AI-based traffic-signal optimization</strong> for urban congestion, which connects to the
-    UN Sustainable Development Goals on <em>industry &amp; infrastructure (SDG&nbsp;9)</em> and
-    <em>climate action (SDG&nbsp;13)</em>.</p>
-
-    <h2>Focus areas</h2>
+    <h2>The record</h2>
     <dl>
-      <div class="meta-row"><dt>Major</dt><dd>Technological Systems Management</dd></div>
-      <div class="meta-row"><dt>Interests</dt><dd>Systems thinking · Mathematics · UX &amp; design</dd></div>
-      <div class="meta-row"><dt>Project</dt><dd>AI traffic-signal optimization (SDG 9 &amp; 13)</dd></div>
-      <div class="meta-row"><dt>Course</dt><dd>EST 240 — Visual Rhetoric &amp; IT</dd></div>
+      <div class="meta-row"><dt>Author</dt><dd>Juhyun Bae</dd></div>
+      <div class="meta-row"><dt>Course</dt><dd>EST 240 &mdash; Visual Rhetoric &amp; Information Technology</dd></div>
+      <div class="meta-row"><dt>Department</dt><dd>Technology &amp; Society</dd></div>
+      <div class="meta-row"><dt>Institution</dt><dd>SUNY Korea (Stony Brook University)</dd></div>
+      <div class="meta-row"><dt>Instructor</dt><dd>Dr. Anthony J. Pennings</dd></div>
+      <div class="meta-row"><dt>Semester</dt><dd>Spring 2026</dd></div>
     </dl>
 
-    <h2>This site</h2>
-    <p>Rather than a template builder, I coded this site directly and hosted it on GitHub Pages —
-    a small way of practicing the systems-and-design mindset I care about. Each page is meant to be
-    clear at a glance and consistent across the whole site.</p>
+    <h2>About the author</h2>
+    <p>I am a freshman in <strong>Technological Systems Management (TSM)</strong> at SUNY Korea, drawn to
+    the seam where engineering, mathematics, and human systems meet. That interest is also why a
+    visual-rhetoric course matters to me: an interface, a logo, and a video are all systems that persuade.
+    An earlier project of mine looked at <strong>AI-based traffic-signal optimization</strong> for urban
+    congestion, tied to the UN Sustainable Development Goals on industry &amp; infrastructure (SDG&nbsp;9)
+    and climate action (SDG&nbsp;13). I am considering a mathematics specialization later in the program.</p>
+
+    <h2>What this site contains</h2>
+    <p>This is the individual website deliverable for EST 240. It hosts three artifacts that are meant
+    to be read together:</p>
+    <ol class="artifact-list">
+      <li><a href="essay.html" class="body-link">Beyond the Headline</a> &mdash; the research essay analyzing
+      the visual meaning-making practices of the <em>Indigo Traveller</em> YouTube channel, in APA format
+      with a full reference list.</li>
+      <li><a href="logo.html" class="body-link">Maison JB</a> &mdash; the personal mark, drawn as scalable
+      vector geometry in three sizes (including a black-and-white variant) with a denotation&ndash;connotation
+      defense.</li>
+      <li>The site itself &mdash; hand-built to satisfy CARP (Contrast, Alignment, Repetition, Proximity)
+      and CATN (Content, Aesthetics, Technology, Navigation).</li>
+    </ol>
+
+    <h2>Why Indigo Traveller</h2>
+    <p>Among possible travel channels, Indigo Traveller is an unusually clear case for visual rhetoric.
+    Host Nick Fisher films countries that Western media usually reduces to headlines &mdash; Somalia, North
+    Korea, Iraq &mdash; and uses handheld camera work, slow editing, and a steady on-screen presence to argue,
+    without ever stating it, that these places hold ordinary human lives. That gap between what the title
+    promises and what the footage shows is exactly the denotation&ndash;connotation tension the course asks
+    us to read, which made it a strong subject for the essay.</p>
+
+    <h2>How the design meets the rubric</h2>
+    <h3>CARP &mdash; visual principles</h3>
+    <div class="rubric-row"><div class="k">Contrast</div><div class="v">A dark ink background against warm
+    off-white text; a display serif (Fraunces) set against a quieter body serif; gold reserved strictly for
+    accents and the logo.</div></div>
+    <div class="rubric-row"><div class="k">Alignment</div><div class="v">A single centered reading column
+    capped at 760&nbsp;pixels; body text left-aligned; navigation and footer sharing one baseline across
+    every page.</div></div>
+    <div class="rubric-row"><div class="k">Repetition</div><div class="v">The same nav bar, footer, type
+    system, color tokens, and eyebrow label repeat on all four pages, so the site reads as one object.</div></div>
+    <div class="rubric-row"><div class="k">Proximity</div><div class="v">Essay metadata is grouped tightly
+    under its title; logo size labels sit directly beneath each tile; references cluster at the foot of the
+    essay.</div></div>
+
+    <h3>CATN &mdash; production principles</h3>
+    <div class="rubric-row"><div class="k">Content</div><div class="v">Each page carries one clear job:
+    analysis, mark, or documentation. No filler.</div></div>
+    <div class="rubric-row"><div class="k">Aesthetics</div><div class="v">A consistent dark editorial system
+    with a faint background grid, chosen to suit a course about how images make meaning.</div></div>
+    <div class="rubric-row"><div class="k">Technology</div><div class="v">Hand-written semantic HTML with a
+    single shared stylesheet; the logo is SVG so it scales from favicon to hero without loss; the YouTube
+    analysis embeds via the official iframe.</div></div>
+    <div class="rubric-row"><div class="k">Navigation</div><div class="v">A fixed top bar on every page; the
+    personal logo links to this About page; the YouTube analysis lives on its own subpage rather than the
+    front page.</div></div>
+
+    <h2>Technology</h2>
+    <p>The site is hand-coded in semantic HTML and CSS with no framework, hosted on GitHub Pages. One shared
+    stylesheet drives every page, so a single change updates the whole site. The logo is drawn in SVG, which
+    keeps it crisp from a 36-pixel favicon up to the full crest. The layout stays readable down to roughly a
+    360-pixel viewport.</p>
+
+    <h2>Acknowledgements</h2>
+    <p>With thanks to Dr. Anthony J. Pennings and the EST 240 teaching team for the analytical framework and
+    the feedback that shaped this site.</p>
+
+    <blockquote>
+      Systems &middot; Structure &middot; Design.
+      <cite>&mdash; the working principle behind this site</cite>
+    </blockquote>
   </div>
 
   <footer class="foot">
     <div class="foot-inner">
-      <span>EST 240 · Visual Rhetoric &amp; IT</span>
-      <span>SUNY Korea · Prof. Pennings</span>
+      <span>EST 240 &middot; Visual Rhetoric &amp; IT</span>
+      <span>SUNY Korea &middot; Prof. Pennings</span>
     </div>
   </footer>
 
