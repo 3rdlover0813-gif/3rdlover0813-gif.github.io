@@ -10,7 +10,7 @@
   --ink-2:      #14171f;   /* raised surface         */
   --line:       #2a2e3a;   /* hairline borders       */
   --paper:      #ece7df;   /* warm off-white text    */
-  --muted:      #8b8f9c;   /* secondary text         */
+  --muted:      #b8bcc7;   /* secondary text (brightened) */
   --amber:      #d8a657;   /* single accent (gold)   */
   --amber-dim:  #9c7a3f;
 
@@ -239,7 +239,7 @@ blockquote cite {
 .note strong { color: var(--amber); }
 
 /* ---------- REFERENCES ---------- */
-.refs { font-size: 15px; color: #c9c5bc; }
+.refs { font-size: 15px; color: #ffffff; }
 .refs li { list-style: none; padding-left: 2.2em; text-indent: -2.2em; margin-bottom: 14px; line-height: 1.55; }
 
 /* ---------- FOOTER ---------- */
