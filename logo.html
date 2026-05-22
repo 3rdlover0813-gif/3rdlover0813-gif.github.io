@@ -3,10 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logo — Personal Mark</title>
+  <title>Logo — Maison JB</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .crest-stage { background: radial-gradient(ellipse at 50% 34%, #1a1409 0%, #080906 72%); border: 1px solid #6e5524; padding: 36px 20px 28px; text-align: center; position: relative; overflow: hidden; }
+    .crest-frame-outer { background:#080906; padding:10px; border:1px solid #c99a3a; margin: 30px 0; }
+    .crest-frame-inner { border:1px solid #6e5524; padding:7px; }
+    .mono-bg { position:absolute; inset:0; }
+    .crest-content { position:relative; z-index:1; }
+    .crest-kicker { font-family: var(--font-display); font-size:10px; letter-spacing:9px; color:#c99a3a; }
+    .maison-label { font-family: var(--font-display); font-size:9px; letter-spacing:7px; color:#8a6f3a; margin-top:4px; }
+    .maison-name { font-family: var(--font-display); font-size:clamp(20px,5vw,28px); letter-spacing:8px; color:#edd07a; margin-top:3px; text-indent:8px; }
+    .gold-div { display:flex; align-items:center; justify-content:center; gap:9px; margin-top:12px; }
+    .gold-div .l { height:1px; width:42px; background:#c99a3a; }
+    .maison-loc { font-family: var(--font-display); font-size:9px; letter-spacing:5px; color:#8a6f3a; margin-top:11px; text-indent:5px; }
+    .scale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); margin:30px 0; }
+    .scale-cell { background:#080906; padding:34px 16px; text-align:center; }
+    .scale-cell .lab { font-family:var(--font-mono); font-size:10px; letter-spacing:1px; color:var(--muted); margin-top:16px; }
+    @media (max-width:620px){ .scale-grid{ grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
+
+  <svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+    <defs>
+      <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fdf3c4"/><stop offset="30%" stop-color="#edd07a"/>
+        <stop offset="60%" stop-color="#c99a3a"/><stop offset="100%" stop-color="#6e5524"/>
+      </linearGradient>
+      <pattern id="ma" width="56" height="56" patternUnits="userSpaceOnUse">
+        <text x="5" y="25" font-family="Georgia,serif" font-size="16" fill="#c99a3a" opacity="0.07">JB</text>
+        <text x="33" y="52" font-family="Georgia,serif" font-size="16" fill="#c99a3a" opacity="0.07">JB</text>
+      </pattern>
+    </defs>
+  </svg>
 
   <nav class="nav">
     <div class="nav-inner">
@@ -23,61 +53,144 @@
   <div class="wrap">
     <header class="hero">
       <div class="eyebrow">02 / Personal Logo</div>
-      <h1>One mark,<br>two <em>meanings</em>.</h1>
-      <p class="lede">[One-line hook: state the dual idea your logo carries — e.g. a system node that
-      also reads as something personal.]</p>
+      <h1>A crest that is<br>also a <em>system</em>.</h1>
+      <p class="lede">Maison JB &mdash; a personal mark built from straight lines and angles, wearing the
+      language of a baroque house while hiding a network of nodes inside the crown and the shield.</p>
     </header>
 
-    <div class="note">
-      <strong>채우는 곳 안내:</strong> 로고 컨셉이 정해지면 이미지를 이 폴더에 넣고 (예: <strong>logo-large.png</strong>),
-      아래 <strong>.ph</strong> 자리표시자를 <strong>&lt;img src="logo-large.png"&gt;</strong> 같은 태그로 바꾸면 됩니다.
-      이전에 얘기한 컨셉 후보(시스템/네트워크 노드, 수학 그래프, 신호등 데이터 노드 등)에서 골라 이중 의미를 만들면 강해요.
-      이 안내 블록은 제출 전에 지우세요.
+    <div class="crest-frame-outer">
+      <div class="crest-frame-inner">
+        <div class="crest-stage">
+          <div class="mono-bg"><svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#ma)"/></svg></div>
+          <div class="crest-content">
+            <div class="crest-kicker">&#9670;&nbsp;&nbsp;PAR EXCELLENCE&nbsp;&nbsp;&#9670;</div>
+            <svg viewBox="0 0 340 360" style="width:100%; max-width:280px; margin-top:8px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Angular Maison JB crest with laurel, crown and shield">
+              <g fill="none" stroke="url(#ga)" stroke-width="2.4" stroke-linejoin="miter">
+                <path d="M120,58 L120,34 L140,48 L150,20 L170,44 L190,20 L200,48 L220,34 L220,58 Z"/>
+              </g>
+              <rect x="150" y="28" width="9" height="9" transform="rotate(45 154 32)" fill="#fdf3c4"/>
+              <rect x="186" y="28" width="9" height="9" transform="rotate(45 190 32)" fill="#fdf3c4"/>
+              <rect x="166" y="14" width="10" height="10" transform="rotate(45 171 19)" fill="#fdf3c4"/>
+              <g fill="none" stroke="url(#ga)" stroke-width="2" stroke-linejoin="miter">
+                <path d="M150,302 L96,278 L80,224 L84,168 L104,128"/>
+                <path d="M190,302 L244,278 L260,224 L256,168 L236,128"/>
+                <path d="M86,232 L62,222 M86,232 L66,250 M92,196 L66,188 M92,196 L70,214 M100,160 L76,154 M100,160 L80,178 M112,134 L90,126 M112,134 L94,150"/>
+                <path d="M254,232 L278,222 M254,232 L274,250 M248,196 L274,188 M248,196 L270,214 M240,160 L264,154 M240,160 L260,178 M228,134 L250,126 M228,134 L246,150"/>
+              </g>
+              <path d="M170,118 L236,158 L236,232 L170,278 L104,232 L104,158 Z" fill="none" stroke="url(#ga)" stroke-width="1.6"/>
+              <path d="M170,128 L228,163 L228,228 L170,268 L112,228 L112,163 Z" fill="none" stroke="#c99a3a" stroke-width="0.5" opacity="0.55"/>
+              <line x1="170" y1="150" x2="200" y2="192" stroke="#c99a3a" stroke-width="1.1" opacity="0.6"/>
+              <line x1="200" y1="192" x2="176" y2="238" stroke="#c99a3a" stroke-width="1.1" opacity="0.6"/>
+              <text x="136" y="224" font-family="Georgia,'Times New Roman',serif" font-size="106" font-weight="500" fill="url(#ga)" text-anchor="middle" style="letter-spacing:-5px;">J</text>
+              <text x="204" y="224" font-family="Georgia,'Times New Roman',serif" font-size="106" font-weight="500" fill="url(#ga)" text-anchor="middle">B</text>
+              <rect x="166" y="146" width="8" height="8" transform="rotate(45 170 150)" fill="#fdf3c4"/>
+              <rect x="196" y="188" width="8" height="8" transform="rotate(45 200 192)" fill="#fdf3c4"/>
+              <rect x="172" y="234" width="8" height="8" transform="rotate(45 176 238)" fill="#fdf3c4"/>
+              <path d="M118,312 L170,304 L222,312 L222,332 L170,324 L118,332 Z" fill="none" stroke="url(#ga)" stroke-width="1.4" stroke-linejoin="miter"/>
+              <text x="170" y="320" font-family="Georgia,serif" font-size="10" letter-spacing="2.5" fill="#edd07a" text-anchor="middle">EST&middot;MMXXVI</text>
+            </svg>
+            <div class="maison-label">MAISON</div>
+            <div class="maison-name">JUHYUN BAE</div>
+            <div class="gold-div">
+              <span style="color:#c99a3a; font-size:8px;">&#9670;</span>
+              <div class="l"></div>
+              <span style="color:#edd07a; font-size:9px;">&#9632;</span>
+              <div class="l"></div>
+              <span style="color:#c99a3a; font-size:8px;">&#9670;</span>
+            </div>
+            <div class="maison-loc">HAUTE&nbsp;SYST&Egrave;MES &middot; SEOUL &middot; INCHEON</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="logo-grid">
-      <div class="logo-cell">
-        <div class="ph">LARGE · COLOR</div>
-        <span>Full mark</span>
+    <h3>Three scales</h3>
+    <div class="scale-grid">
+      <div class="scale-cell">
+        <svg viewBox="0 0 140 150" style="width:100%; max-width:104px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Large crown and monogram, gold">
+          <g fill="none" stroke="url(#ga)" stroke-width="2.6" stroke-linejoin="miter">
+            <path d="M34,52 L34,30 L52,42 L60,18 L78,40 L96,18 L104,42 L122,30 L122,52 Z" transform="scale(0.62) translate(20,8)"/>
+          </g>
+          <rect x="42" y="26" width="7" height="7" transform="rotate(45 45 30)" fill="#fdf3c4"/>
+          <rect x="65" y="14" width="8" height="8" transform="rotate(45 69 18)" fill="#fdf3c4"/>
+          <rect x="90" y="26" width="7" height="7" transform="rotate(45 93 30)" fill="#fdf3c4"/>
+          <text x="44" y="130" font-family="Georgia,serif" font-size="80" font-weight="500" fill="url(#ga)" text-anchor="middle" style="letter-spacing:-4px;">J</text>
+          <text x="92" y="130" font-family="Georgia,serif" font-size="80" font-weight="500" fill="url(#ga)" text-anchor="middle">B</text>
+        </svg>
+        <div class="lab">LARGE &middot; CROWNED MONOGRAM</div>
       </div>
-      <div class="logo-cell">
-        <div class="ph">MEDIUM · B/W</div>
-        <span>Monochrome</span>
+      <div class="scale-cell">
+        <svg viewBox="0 0 140 150" style="width:100%; max-width:96px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Medium monogram, monochrome">
+          <text x="44" y="118" font-family="Georgia,serif" font-size="92" font-weight="500" fill="#ece7df" text-anchor="middle" style="letter-spacing:-4px;">J</text>
+          <text x="92" y="118" font-family="Georgia,serif" font-size="92" font-weight="500" fill="none" stroke="#ece7df" stroke-width="2" text-anchor="middle">B</text>
+        </svg>
+        <div class="lab">MEDIUM &middot; B/W MONOGRAM</div>
       </div>
-      <div class="logo-cell">
-        <div class="ph">SMALL · ICON</div>
-        <span>Favicon scale</span>
+      <div class="scale-cell">
+        <div style="display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px; background:#14110a; border:1px solid #6e5524;">
+          <svg viewBox="0 0 120 110" style="width:32px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Small JB icon, solid gold">
+            <text x="34" y="92" font-family="Georgia,serif" font-size="92" font-weight="600" fill="#edd07a" text-anchor="middle" style="letter-spacing:-6px;">JB</text>
+          </svg>
+        </div>
+        <div class="lab">SMALL &middot; ICON / FAVICON</div>
       </div>
     </div>
 
     <h2>Concept</h2>
-    <p>[Explain the idea. What does the mark literally show, and what does it mean?]</p>
+    <p>The mark is built as a deliberate paradox, and it is built entirely from straight lines and angles.
+    On the surface it borrows the visual grammar of a baroque luxury <em>maison</em> &mdash; a crown, a laurel
+    wreath, a shield, a metallic gold finish, a repeating monogram canvas, and a founding year set in Roman
+    numerals. Underneath that surface it carries a second, quieter system: the crown's gems and the points of
+    the monogram are <strong>nodes</strong>, joined by thin connecting lines into a small network. The angular
+    geometry is the bridge between the two readings, because the same hard edges that make the crest look
+    carved and authoritative also make it look like a system diagram, which mirrors my own field,
+    Technological Systems Management.</p>
+
     <div class="dc">
       <div class="dc-label">Denotation</div>
-      <p>[The literal shapes and forms in the logo.]</p>
+      <p>A gold heraldic crest: a zig-zag crown set with diamond gems, a laurel wreath drawn as straight
+      angled leaves, a six-sided shield, and the overlapping initials J and B inside it. Diamond nodes sit on
+      the crown and at three points of the monogram, linked by faint lines. A ribbon reads "EST&middot;MMXXVI,"
+      and a pale JB pattern repeats across the background.</p>
       <div class="dc-label">Connotation</div>
-      <p>[The identity it communicates — your values, field, character.]</p>
+      <p>The crown signals authority and plays on my nickname ("prince"); the laurel signals victory and honor;
+      the shield and French text ("Haute Syst&egrave;mes") signal heritage and a curated luxury house. The gold
+      signals premium craft. But the deliberate <em>excess</em> is itself the argument: where minimalism claims
+      that power is restraint, this mark insists on the opposite. And the angular nodes quietly reframe all of
+      it as a <em>system</em> &mdash; ornament on the outside, structure within.</p>
     </div>
 
     <blockquote>
-      The image does not float free of meaning; the design anchors it.
-      <cite>— after Stuart Hall, on anchorage</cite>
+      An anchor does not float free of meaning; the design fixes it.
+      <cite>&mdash; after Stuart Hall, on anchorage</cite>
     </blockquote>
 
     <h2>How it was built</h2>
-    <h3>AI prompt progression</h3>
-    <p>[List the prompts you used, step by step, to show the design developing — concept &rarr; silhouette
-    &rarr; refinement &rarr; wordmark &rarr; variants.]</p>
+    <h3>Construction logic</h3>
+    <p>The crest was drawn as vector geometry rather than generated as an image, so every element is deliberate.
+    Every curve was removed on purpose: the crown is a single zig-zag path, the laurel is built from straight
+    angled strokes, and the frame is a hard six-sided shield instead of an oval. The crown's diamond gems share
+    the same shape and size as the three monogram nodes, which is what lets the eye connect them into one
+    network. The initials use a high-contrast serif so the gold gradient catches a metallic sheen from light to
+    dark.</p>
+
+    <h3>Scaling strategy</h3>
+    <p>Baroque detail does not survive shrinking, so the mark steps down deliberately. The full crest is used
+    large; a crowned monogram is used at medium size; and a solid two-letter icon is used for the favicon, where
+    gradients and thin lines would otherwise turn to mud.</p>
 
     <h2>Why it works</h2>
-    <p>[Justify against Module 8 criteria: clarity at small scale, works in color and B/W, and a clear
-    denotation/connotation relationship.]</p>
+    <p>The mark satisfies the core logo criteria. It is <strong>clear at scale</strong> because it reduces to a
+    clean JB icon. It <strong>works in color and in black and white</strong>, since the monochrome monogram keeps
+    the J solid and the B outlined for contrast. And it carries a genuine
+    <strong>denotation&ndash;connotation relationship</strong>: the same angular shapes can be read as a baroque
+    crest or as a system diagram, which is exactly the kind of layered, intentional meaning visual rhetoric asks for.</p>
   </div>
 
   <footer class="foot">
     <div class="foot-inner">
-      <span>EST 240 · Visual Rhetoric &amp; IT</span>
-      <span>SUNY Korea · Prof. Pennings</span>
+      <span>EST 240 &middot; Visual Rhetoric &amp; IT</span>
+      <span>SUNY Korea &middot; Prof. Pennings</span>
     </div>
   </footer>
 
